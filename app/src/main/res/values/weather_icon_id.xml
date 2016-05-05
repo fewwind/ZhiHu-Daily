@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="weather_icon_clear">0</integer>
+    <integer name="weather_icon_cloudy">1</integer>
+    <integer name="weather_icon_rain">2</integer>
+    <integer name="weather_icon_snow">3</integer>
+    <integer name="weather_icon_tstorms">4</integer>
+    <integer name="weather_icon_sleet">5</integer>
+    <integer name="weather_icon_fog">6</integer>
+    <integer name="weather_icon_haze">7</integer>
+    <integer name="weather_icon_unknown">8</integer>
+</resources>

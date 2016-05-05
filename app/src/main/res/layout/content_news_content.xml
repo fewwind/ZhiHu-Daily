@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fewwind.com.myzhihu.activity.NewsContentActivity"
+    tools:showIn="@layout/activity_news_content">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/id_detail_wv_news"
+            android:paddingTop="28dp"
+            android:paddingBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:scrollbars="vertical" />
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/id_detail_load_news"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

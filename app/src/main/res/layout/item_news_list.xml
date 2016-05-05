@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginLeft="@dimen/spacing_medium"
+    android:layout_marginRight="@dimen/spacing_medium"
+    android:layout_marginTop="@dimen/spacing_medium"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_news"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitCenter"
+            android:transitionName="@string/news_image"
+            android:src="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_medium"
+            android:layout_toRightOf="@id/iv_news"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="3"
+            android:textColor="@color/color_unread"
+            android:padding="8dp"
+            android:textSize="18sp"
+            tools:text="新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题,不忘初心,方得始终." />
+
+
+
+
+    </RelativeLayout>
+    <com.flyco.labelview.LabelView
+        xmlns:lv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_labeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:visibility="gone"
+        lv:lv_background_color="@color/colorAccent"
+        lv:lv_fill_triangle="true"
+        lv:lv_gravity="BOTTOM_RIGHT"
+        lv:lv_text="多图"/>
+</android.support.v7.widget.CardView>

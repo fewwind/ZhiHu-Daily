@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@layout/pref_item"
+    android:title="设置">
+    <PreferenceCategory
+        android:layout="@layout/pref_category_widget"
+        android:title="个性化选择">
+        <CheckBoxPreference
+
+            android:defaultValue="true"
+            android:key="set_cache"
+            android:layout="@layout/pref_item"
+            android:summaryOff="优先从网络加载"
+            android:summaryOn="优先使用缓存，没有缓存则请求网络"
+            android:title="超强离线模式"></CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="set_image"
+            android:layout="@layout/pref_item"
+            android:summaryOff="任何网络都显示图片"
+            android:summaryOn="仅wifi网络下载图片"
+            android:title="无图模式"
+
+            ></CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="set_anim"
+            android:layout="@layout/pref_item"
+            android:title="是否开启列表滑动动画"
+
+            ></CheckBoxPreference>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/pref_category_widget"
+        android:title="其他">
+        <Preference
+            android:key="set_about"
+            android:layout="@layout/pref_item"
+            android:title="关于">
+
+        </Preference>
+
+        <Preference
+            android:layout="@layout/pref_item"
+            android:title="手动检查更新">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://fir.im/3hse" />
+        </Preference>
+
+        <Preference
+            android:key="set_like"
+            android:layout="@layout/pref_item"
+            android:summary="若你觉得专注日报很赞的话，麻烦点击此处到应用商店给个好评，非常感谢"
+            android:title="喜欢专注日报">
+
+        </Preference>
+        <Preference
+            android:key="set_money"
+            android:layout="@layout/pref_item"
+            android:summary="金额随意，您的支持将是我进步的阶梯"
+            android:title="打个小赏">
+
+        </Preference>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

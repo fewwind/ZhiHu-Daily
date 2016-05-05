@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 开源项目  圆形的imageview -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    //这是自定义 viewpager指示器的 属性，如果标签多的时候一页展示多少
+    <declare-styleable name="ViewPagerIndicator">
+
+        <attr name="visible_tab_count" format="integer"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_progress" format="float" />
+        <attr name="cpv_maxProgress" format="float" />
+        <attr name="cpv_animDuration" format="integer" />
+        <attr name="cpv_animSwoopDuration" format="integer" />
+        <attr name="cpv_animSyncDuration" format="integer" />
+        <attr name="cpv_color" format="color"/>
+        <attr name="cpv_thickness" format="dimension"/>
+        <attr name="cpv_indeterminate" format="boolean" />
+        <attr name="cpv_animAutostart" format="boolean" />
+        <attr name="cpv_animSteps" format="integer" />
+        <attr name="cpv_startAngle" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <attr name="textColorFirst" format="color"/>
+    <attr name="textColorSecond" format="color"/>
+    <attr name="textColorThird" format="color"/>
+    <attr name="toolbar_Text_Color" format="color"/>
+    <attr name="toolbar_Background_Color" format="color"/>
+    <attr name="toolbar_Menu_Text_Color" format="color"/>
+    <attr name="main_item_background" format="color"/>
+    <attr name="main_menu_changetheme" format="string"/>
+</resources>
