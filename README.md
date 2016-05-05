@@ -10,7 +10,8 @@
 * 强大的离线功能，收藏以后随时随地查看
 * 可以展示长短评论和赞数等额外信息
 * 完整的知乎专栏,滑动返回等
-**** 运行截图
+
+####  运行截图
 
 ![5.gif](http://upload-images.jianshu.io/upload_images/767626-2669519c17d21832.gif?imageMogr2/auto-orient/strip)
 
