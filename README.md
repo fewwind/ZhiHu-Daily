@@ -30,4 +30,4 @@
 *   'com.flyco.labelview:FlycoLabelView_Lib:1.0.2@aar'
 *  'com.zhy:base-adapter:2.0.0'
 
-###### 用到了咕咚 AppPlus中的几个工具，还有css也是找的别人的，感谢开源！
+###### 用到了  [  咕咚 AppPlus](https://github.com/maoruibin/AppPlus) 中的几个工具，还有css也是找的别人的，感谢开源！
