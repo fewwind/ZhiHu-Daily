@@ -3,7 +3,7 @@
 
 ![ic_launcher.png](http://upload-images.jianshu.io/upload_images/767626-e8114c21493bda4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-一款第三方知乎日报，内容来自[知乎日报 API 分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90),版权属于知乎，如有不妥请告知。[fir.im下载](http://fir.im/3hse)  酷市场不是最新的。            [酷市场下载](http://www.coolapk.com/apk/fewwind.com.myzhihu)
+一款第三方知乎日报，内容来自[知乎日报 API 分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90),版权属于知乎，如有不妥请告知。[fir.im下载](http://fir.im/3hse)                [酷市场下载](http://www.coolapk.com/apk/fewwind.com.myzhihu)
 #### 专注日报特点
 * 可能是功能最全的第三方知乎日报
 * 不仅分页展示所有日报，还可以按日期选择过往日报
