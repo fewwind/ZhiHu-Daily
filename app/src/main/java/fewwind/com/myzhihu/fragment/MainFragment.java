@@ -1,6 +1,8 @@
 package fewwind.com.myzhihu.fragment;
 
 import android.annotation.TargetApi;
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -10,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
@@ -273,17 +276,23 @@ public class MainFragment extends BaseFragment implements NewsListAdapter.OnItem
         bean.setIsRead(true);
         mNewsData.set(pos, bean);
         mNewsListAdapter.notifyItemChanged(pos);
-        NewsContentActivity.startActivity(getActivity(), bundle);
 
-/*        Intent intent = new Intent(getActivity(), NewsContentActivity.class);
+//        NewsContentActivity.startActivity(getActivity(), bundle);
+
+
+        Intent intent = new Intent(getActivity(), NewsContentActivity.class);
+        ImageView share = (ImageView) view.findViewById(R.id.iv_news);
         intent.putExtras(bundle);
-        ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                getActivity(),
-                new Pair<View, String>(view.findViewById(R.id.iv_news),
-                        NewsContentActivity.VIEW_NAME_HEADER_IMAGE));
+        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(getActivity(), share, NewsContentActivity.VIEW_NAME_HEADER_IMAGE).toBundle());
 
-        // Now we can start the Activity, providing the activity options as a bundle
-        ActivityCompat.startActivity(getActivity(), intent, activityOptions.toBundle());*/
+
+//        ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(
+//                getActivity(),
+//                new Pair<View, String>(view.findViewById(R.id.iv_news),
+//                        NewsContentActivity.VIEW_NAME_HEADER_IMAGE));
+//
+//        // Now we can start the Activity, providing the activity options as a bundle
+//        ActivityCompat.startActivity(getActivity(), intent, activityOptions.toBundle());
 
 
     }

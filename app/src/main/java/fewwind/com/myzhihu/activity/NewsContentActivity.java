@@ -42,7 +42,7 @@ public class NewsContentActivity extends BaseActivity {
     public static String STORY_BEAN = "storiesEntityBean";
 
 
-    public static final String VIEW_NAME_HEADER_IMAGE = "detail:header:image";
+    public static final String VIEW_NAME_HEADER_IMAGE = "shareTransition";
 
     private NewSendBean newInfo;
 
@@ -240,8 +240,12 @@ public class NewsContentActivity extends BaseActivity {
                 + zhiContentBean.getBody().replace("<div class=\"img-place-holder\">", "");
 //                        + zhiContentBean.getBody().replace("<div class=\"img-place-holder\">", sb.toString());
 
+        String mNewsContentNoImg = "<link rel=\"stylesheet\" type=\"text/css\" href=\"news_content_style_no_img.css\"/>"
+                + "<link rel=\"stylesheet\" type=\"text/css\" href=\"news_header_style.css\"/>"
+                + zhiContentBean.getBody().replace("<div class=\"img-place-holder\">", "");
 
         mWebView.loadDataWithBaseURL("file:///android_asset/", mNewsContent, "text/html", "UTF-8", null);
+//        mWebView.loadDataWithBaseURL("file:///android_asset/", mNewsContentNoImg, "text/html", "UTF-8", null);
         mWebView.setDrawingCacheEnabled(true);
         mLoading.setVisibility(View.GONE);
     }
@@ -282,5 +286,7 @@ public class NewsContentActivity extends BaseActivity {
         intent.putExtras(bundle);
         context.startActivity(intent);
     }
+
+
 
 }

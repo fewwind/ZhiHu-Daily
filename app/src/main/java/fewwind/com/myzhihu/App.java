@@ -36,6 +36,7 @@ public class App extends Application {
             e.printStackTrace();
         }
 
+
     }
 
     public void addActivity(Activity activity) {

@@ -32,7 +32,7 @@
                 app:layout_scrollFlags="scroll|snap|enterAlways|enterAlwaysCollapsed">
 
                 <ImageView
-                    android:transitionName="@string/news_image"
+                    android:transitionName="shareTransition"
                     android:id="@+id/iv_news"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

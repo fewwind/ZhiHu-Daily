@@ -2,7 +2,6 @@ package fewwind.com.myzhihu;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -98,6 +97,7 @@ public class MainActivity extends BaseActivity implements BottomNavigation.OnMen
                updateContent();
             }
         }, 800);
+
     }
 
 
